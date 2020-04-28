@@ -26,7 +26,7 @@ body{
 .box-4 {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
     position: absolute;
-    width: 90%;
+    width: 87%;
     margin: 100px 10px 0px 25px;
 }
 
@@ -44,9 +44,10 @@ body{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     content: "";
     height: 20px;
-    left: 10px;
+    
     position: absolute;
-    right: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .box-content h6{
 text-align: center;
@@ -93,7 +94,7 @@ text-align: center;
 
 var wf ='';
  $.each(data.weather, function(index, val){
-wf += '<p><b>' + data.name + "</b><img src=' https://openweathermap.org/img/wn/10d@2x.png'"+ val.icon +".png></p> "+ data.main.temp + '&deg;C' + '|' + val.main + " ," + val.description
+wf += '<p><b>' + data.name + "</b><img src=http://openweathermap.org/img/wn/"+ val.icon +".png></p> "+ data.main.temp + '&deg;C' + '|' + val.main + " ," + val.description
    });
    $("#showWeatherForcast").html(wf);
    }
