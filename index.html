@@ -93,7 +93,7 @@ text-align: center;
 
 var wf ='';
  $.each(data.weather, function(index, val){
-wf += '<p><b>' + data.name + "</b><img src=' http://openweathermap.org/img/wn/10d@2x.png'"+ val.icon +".png></p> "+ data.main.temp + '&deg;C' + '|' + val.main + " ," + val.description
+wf += '<p><b>' + data.name + "</b><img src=' https://openweathermap.org/img/wn/10d@2x.png'"+ val.icon +".png></p> "+ data.main.temp + '&deg;C' + '|' + val.main + " ," + val.description
    });
    $("#showWeatherForcast").html(wf);
    }
